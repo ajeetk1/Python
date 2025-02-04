@@ -16,3 +16,4 @@ def type_validation(variable, _type):
 # The .__name__ attribute is a special attribute in Python that is used to get the name of a class, 
 # function, type, or module as a string. It is particularly useful when you want to work 
 # with the name of an object rather than the object itself.
+
