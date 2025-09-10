@@ -12,8 +12,3 @@ def rain_amount(mm):
         print("Your plant has had more than enough water for today!")
 
 
-def my_first_kata(a,b):
-    if type(a) or type(b) == "number": 
-        return (a % b + b % a)
-    else:
-        return False
