@@ -1,19 +1,20 @@
-#print(len("Hello"))
-#print(len(1234567)) # TypeError: object of type 'int' has no len()
+import random 
 
-print("Hello"[2])
-print("Good"[3])
+import module
 
-# How to add stings 
-print("123" + "456") # Concatenate String
-print()
+# Random Integer
+random_integer = random.randint(1,10)
+print(random_integer)
 
-print (12+88)
-print(123_678_890) # How this work ??
-# the underscores (_) are just visual separators to make 
-# large numbers easier to read. They don't affect the value of the number.
-print(3.45612)
-print()
+print(module.pi)
 
-print(True)
-print(False)
+random_float = random.random()
+print(random_float)
+
+random_float = random.random() * 10
+print(random_float)
+
+love_score = random.randint(1,100)
+print(f"Your love score is {love_score}")
+
+# Randint and Random Function 

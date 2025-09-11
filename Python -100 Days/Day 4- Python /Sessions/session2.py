@@ -1,31 +1,35 @@
-# Typeerror 
-#print(len(12344)) #Integer 
+# Array of cities of USA
 
-# Type Conversion 
-num_char = print(len("What's your name?"))
+states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Connecticut",
+                     "Massachusetts", "Maryland", "South Carolina", "New Hampshire",
+                     "Virginia", "New York", "North Carolina", "Rhode Island", "Vermont",
+                     "Kentucky", "Tennessee", "Ohio", "Louisiana", "Indiana", "Mississippi",
+                     "Illinois", "Alabama", "Maine", "Missouri", "Arkansas", "Michigan",
+                     "Florida", "Texas", "Iowa", "Wisconsin", "California", "Minnesota",
+                     "Oregon", "Kansas", "West Virginia", "Nevada", "Nebraska", "Colorado",
+                     "North Dakota", "South Dakota", "Montana", "Washington", "Idaho",
+                     "Wyoming", "Utah", "Oklahoma", "New Mexico", "Arizona", "Alaska", "Hawaii"]
 
-# TypeError
-#can only concatenate str (not "NoneType") to str You can't concatenate the number and strings
-#print("your name" + num_char + "characters.") 
+print(states_of_america[0])
+print(states_of_america[1])
+print(states_of_america[5])
+print(states_of_america[2])
 
-#type function 
-print(type(num_char))
-new_num_char = str(num_char)
-print("your name" + new_num_char+ "characters.")
-print ()
 
-a = 123 
-print (type(a))
+# From end -1 is the first element
+print(states_of_america[-3])
+print(states_of_america[-1])
+print(states_of_america[-5])
+print(states_of_america[-2])
 
-# convert to string 
-a = str(123)
-print(type(a))
+states_of_america[1] = "Pennsylvania"
+print(states_of_america)
 
-a = float(123)
-print(type(a))
+# Append Function Add
 
-print(70 + float(100.7))
-print(str(70)+ str(100))
-print(70+100)
-print(int(90)+int(100))
+states_of_america.append("Angela_land")
+print(states_of_america)
 
+# Extend Function 
+states_of_america.extend(["Loveland","Gobiland"])
+print(states_of_america)
