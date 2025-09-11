@@ -1,10 +1,11 @@
-# BMI 
+# Split String Method 
 
-height = input("Enter Height in m :")
-weight = input("Enter Weight in kg :")
+import random
 
-height = float(height)
-weight = float(weight)
+names_string = input("Give me everybody names ,seperated by comma")
+names = names_string.split(" ,")
+print(names)
 
-bmi = int(weight/height ** 2)
-print(bmi)
+
+index = random.randrange(0,len(names))
+print(f'{names[index]} is going to party')

@@ -1,9 +1,10 @@
-two_digit_number = input("Enter two digit number : ")
-print(two_digit_number)
+# Coin Heads and Tales using randint
 
-first_digit = int(two_digit_number[0]) 
-second_digit= int(two_digit_number[1])
+import random 
 
-sum = (first_digit+second_digit)
-print(sum)
+coin = random.randint(0,1)
 
+if coin == 0:
+    print("Heads")
+else:
+    print("Tails")

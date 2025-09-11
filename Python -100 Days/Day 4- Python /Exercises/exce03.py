@@ -1,15 +1,16 @@
-# Age 
+#Declare Rows 
+row1 = ["⬜️", "⬜️", "⬜️"]
+row2 = ["⬜️", "⬜️", "⬜️"]
+row3 = ["⬜️", "⬜️", "⬜️"]
 
-age = input("What is your current age?")
-print(age)
+treasure_maps = [row1,row2,row3]
+print(f'{row1}\n,{row2}\n,{row3}')
 
-# Age i die is 90 
-# Years left 
-years_left = 90-int(age)
+position = input("Where you want to put the treasure")
 
+row = int(position[1])-1 
+col = int(position[0])-1 
 
-months_left= 12*years_left
-weeks_left= 52*months_left
-days_left= 365*weeks_left
+treasure_maps[row][col] = '❎️'
 
-print(f"you current age is {age} and you have {years_left} and {months_left} and {days_left} on this planet")
+print(f"{row1}\n,{row2}\n,{row3}")
