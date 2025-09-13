@@ -14,6 +14,8 @@ def no_space(x):
     return (newStr)
 
 # RePlace Method 
+
+
 def no_space(x):
     newStr = x.replace("", " ")
     return(newStr)

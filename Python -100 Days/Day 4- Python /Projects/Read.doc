@@ -1,0 +1,17 @@
+ PDF Scrapper
+
+How to proceed
+# Input: Upload the PDF or Folder with PDFS
+
+# Preprocessing 
+# Extract the raw text and Tables higher accuracy mixed layout pdf2xml + parsing 
+
+# AI Layer 
+
+# Prompt to detect PDF
+
+# Normalize into consistent schema
+
+# Output:
+# Extracted table to the excel or doc 
+
