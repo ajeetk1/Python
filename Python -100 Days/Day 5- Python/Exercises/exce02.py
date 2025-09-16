@@ -1,10 +1,16 @@
-# BMI 
+# student scores 
 
-height = input("Enter Height in m :")
-weight = input("Enter Weight in kg :")
+student_marks = input("Enter student marks?").split()
+print(student_marks)
 
-height = float(height)
-weight = float(weight)
+for n in range(0,len(student_marks)):
+    student_marks[n] = int(student_marks[n])
 
-bmi = int(weight/height ** 2)
-print(bmi)
+# find highest marks of students
+max_marks = student_marks[0]
+for student_mark in student_marks:
+    if student_mark > max_marks:
+        max_marks = student_mark
+print(f"My Name is Amit and scored {max_marks}")
+
+
