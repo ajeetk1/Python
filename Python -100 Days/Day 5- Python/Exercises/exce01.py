@@ -1,9 +1,24 @@
-two_digit_number = input("Enter two digit number : ")
-print(two_digit_number)
+# for loop 
+# Input the heights
+student_heights = input("Ener the heights of students").split()
 
-first_digit = int(two_digit_number[0]) 
-second_digit= int(two_digit_number[1])
+for n in range (0,len(student_heights)):
 
-sum = (first_digit+second_digit)
-print(sum)
+    student_heights[n] = int(student_heights[n])
+    #print(student_heights)
+   
+    # Find average = total height of students /number of students
+
+    total = 0
+    count_no_students = 0 
+
+    for student_height in student_heights:
+        total += int(student_height) 
+        count_no_students +=1 
+
+
+print("Average:",round(total/count_no_students))
+print("Total:", count_no_students)
+
+
 
