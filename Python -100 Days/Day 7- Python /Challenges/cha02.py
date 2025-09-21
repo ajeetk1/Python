@@ -19,3 +19,17 @@ print(f"The feature is {choice_word}")
 
 # output the letter
 
+while '_' in display:
+    print (display)
+# Ask the player to input the letter 
+    guess_word = input("Enter the letter?").lower()
+    print(guess_word)
+    for idx,letter in enumerate(choice_word):
+     if guess_word == letter:
+        display[idx] = letter
+
+print(display)
+print("You win")
+
+
+    
