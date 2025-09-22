@@ -1,36 +1,33 @@
-# Challenge 4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrape Bot</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>X (Twitter) Scraper Bot</h2>
+    <form method="POST">
+      <label>Profile/Tweet URLs (one per line):</label><br>
+      <textarea name="urls" rows="5" required></textarea><br><br>
 
-import random 
+      <label>Include List (handles, space separated):</label><br>
+      <input type="text" name="include"><br><br>
 
-stages = [r '''''']
+      <label>Exclude List (handles, space separated):</label><br>
+      <input type="text" name="exclude"><br><br>
 
-word_list = ["adverse","john","Judo"]
-#print(word_list)
-choice_of_word = random.choice(word_list)
-print(choice_of_word)
-# Find length of word
-display =["-"]*len(choice_of_word)
-print(display)
-lives = 6  # lives ??
+      <label>Export Format:</label><br>
+      <select name="format">
+        <option value="csv">CSV</option>
+        <option value="excel">Excel</option>
+        <option value="json">JSON</option>
+      </select><br><br>
 
-print(f"What is the word {choice_of_word}")
-
-
-while '-' in display and lives>0:
-    print(f"{'.'.join(display)}")
-
-    guess_letter = input("Enter the chosen letter").lower()
-    if guess_letter in choice_of_word:
-        for idx,letter in enumerate(choice_of_word):
-            if guess_letter == letter:
-                display[idx] = letter
-
-            else:
-                lives -= 1
-                print(stages[lives])
-                print(f"{"".join(display)}")
-
-                if lives == 0:
-                    print("you loose")
-                else:
-                    print("You win")
+      <button type="submit">Run Scraper</button>
+    </form>
+</div>
+</body>
+</html>
