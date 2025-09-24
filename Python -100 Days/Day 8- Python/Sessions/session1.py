@@ -1,19 +1,20 @@
-#print(len("Hello"))
-#print(len(1234567)) # TypeError: object of type 'int' has no len()
+def hello():
+    print("Hello World")
+    print("How are you")
 
-print("Hello"[2])
-print("Good"[3])
+hello()
 
-# How to add stings 
-print("123" + "456") # Concatenate String
-print()
+def greet():
+    print("Welcome")
+    print("Things are good")
 
-print (12+88)
-print(123_678_890) # How this work ??
-# the underscores (_) are just visual separators to make 
-# large numbers easier to read. They don't affect the value of the number.
-print(3.45612)
-print()
+greet()
 
-print(True)
-print(False)
+def greet(name):
+   print(f"Hello my {name}")
+
+greet("Rachel")
+
+def school (boys):
+    print(f"How many {boys} boys are in school?")
+school(56)

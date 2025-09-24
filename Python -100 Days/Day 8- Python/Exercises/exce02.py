@@ -5,11 +5,16 @@ def prime_number(num):
         print("It is not a prime number")
     else:
         for digit in range (2, num):
-            if num % 2 == 0:
+            if num % digit == 0:
                 print("Number is not prime number ")
+                break
             else:
                 print("Number is prime number")
+
 
 n = int(input ("Add any number"))
 # Function call def
 prime_number(num =n)
+
+####
+
