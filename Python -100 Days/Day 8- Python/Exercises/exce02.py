@@ -1,10 +1,15 @@
-# BMI 
+# Lets Check the prime number 
 
-height = input("Enter Height in m :")
-weight = input("Enter Weight in kg :")
+def prime_number(num):
+    if num == 1:
+        print("It is not a prime number")
+    else:
+        for digit in range (2, num):
+            if num % 2 == 0:
+                print("Number is not prime number ")
+            else:
+                print("Number is prime number")
 
-height = float(height)
-weight = float(weight)
-
-bmi = int(weight/height ** 2)
-print(bmi)
+n = int(input ("Add any number"))
+# Function call def
+prime_number(num =n)
