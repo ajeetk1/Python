@@ -1,3 +1,4 @@
+# Function
 def hello():
     print("Hello World")
     print("How are you")
@@ -18,3 +19,4 @@ greet("Rachel")
 def school (boys):
     print(f"How many {boys} boys are in school?")
 school(56)
+

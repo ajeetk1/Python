@@ -1,31 +1,18 @@
-# Typeerror 
-#print(len(12344)) #Integer 
+def gabe(name):
+    print(f"What is the {name}")
 
-# Type Conversion 
-num_char = print(len("What's your name?"))
+gabe("Angela")
 
-# TypeError
-#can only concatenate str (not "NoneType") to str You can't concatenate the number and strings
-#print("your name" + num_char + "characters.") 
+def start(color,font,sky):
+    print(f"What is your {color}")
+    print(f"What is the {font} and {sky}")
 
-#type function 
-print(type(num_char))
-new_num_char = str(num_char)
-print("your name" + new_num_char+ "characters.")
-print ()
+start("Red","Ariel", "Blue")
 
-a = 123 
-print (type(a))
+def greet(name,location,city):
+    print(f"Hello, {name}" )
+    print(f"What is the {location} and {city}")
 
-# convert to string 
-a = str(123)
-print(type(a))
-
-a = float(123)
-print(type(a))
-
-print(70 + float(100.7))
-print(str(70)+ str(100))
-print(70+100)
-print(int(90)+int(100))
-
+greet("Robi","Stanley","Florida")
+greet(name = "Rachel", location = "Florida", city = "Japan")
+greet(name = "Rudy", location = "Germany",city="Joy" )
