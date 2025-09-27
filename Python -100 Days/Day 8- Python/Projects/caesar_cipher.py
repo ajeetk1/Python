@@ -9,4 +9,5 @@ def cipher(text,shift,direction):
 
   # iteration through text through loop
   
+    
 
